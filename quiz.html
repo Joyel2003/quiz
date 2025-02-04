@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <h1>Interactive Quiz</h1>
+      <div id="question-container">
+        <p id="question"></p>
+        <div id="answers">
+          <button class="answer-btn" onclick="checkAnswer(0)"></button>
+          <button class="answer-btn" onclick="checkAnswer(1)"></button>
+          <button class="answer-btn" onclick="checkAnswer(2)"></button>
+          <button class="answer-btn" onclick="checkAnswer(3)"></button>
+        </div>
+      </div>
+      <div id="result-container" style="display: none;">
+        <p id="result"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
